@@ -1,0 +1,348 @@
+ho gya download
+kha dikh rha hai card?
+ye aara
+ab?
+done next?
+?
+done
+sb same hi bnege?
+v
+Pasted code.py
+Python
+kya karu?
+
+Yes. Since this is your Week 3 Logistics EDA project, push the whole project—not just the DOC.
+
+Recommended GitHub structure:
+
+week3-logistics-eda/
+│
+├── code.py
+├── Delivery_Logistics_Cleaned.csv
+├── Week_3_Logistics_EDA_Report_FINAL.docx
+│
+├── visualizations/
+│   ├── 01_delivery_time_distribution.png
+│   ├── 02_delivery_cost_distribution.png
+│   ├── 03_distance_distribution.png
+│   ├── 04_delivery_time_boxplot.png
+│   ├── 05_delivery_cost_boxplot.png
+│   ├── 06_distance_boxplot.png
+│   ├── 07_distance_vs_delivery_time.png
+│   ├── 08_distance_vs_delivery_cost.png
+│   ├── 09_actual_vs_expected_time.png
+│   ├── 10_avg_delivery_time_region.png
+│   ├── 11_avg_cost_delivery_mode.png
+│   ├── 12_avg_rating_partner.png
+│   ├── 13_delay_vehicle_type.png
+│   ├── 14_correlation_heatmap.png
+│   └── 15_delay_rate_region.png
+│
+└── README.md
+But first — one important thing
+
+Don't upload the CSV if it contains private/sensitive data. If it's your generated/hypothetical logistics dataset with no personal information, it's fine.
+
+For GitHub, I also recommend adding a good README.md. I can make that for you.
+
+If you're using VS Code
+
+Your current folder is:
+
+C:\Users\pande\Dropbox\Yuvaintern_week2\week3
+
+Open that folder in VS Code and use the terminal.
+
+First run:
+
+git init
+
+Then:
+
+git add .
+
+Then:
+
+git commit -m "Complete Week 3 Logistics EDA"
+
+Then create a new empty repository on GitHub named:
+
+week3-logistics-eda
+
+After creating it, GitHub will give you commands similar to:
+
+git branch -M main
+git remote add origin https://github.com/YOUR_USERNAME/week3-logistics-eda.git
+git push -u origin main
+
+Don't copy my URL literally—use the repository URL GitHub gives you.
+
+If you want, send me a screenshot of your GitHub new repository page, and I'll tell you exactly what to click/type next, one step at a time.
+
+kesse file bnai
+
+Haan 😭 GitHub ke liye folder/files banana pooch rahi ho. Chalo easiest way se karte hain.
+
+Tumhare VS Code mein already week3 folder hai. Usi ko GitHub project folder bana do.
+
+1. VS Code Explorer mein
+
+week3 par right click → New Folder
+
+Naam:
+
+visualizations
+2. Ab jo PNG files hain
+
+Tumhare Explorer mein 01_...png se 15_...png tak already hain.
+
+Un sabko:
+
+Ctrl + click karke select → right click → Cut
+
+phir visualizations folder open karke:
+
+Paste
+
+Structure:
+
+week3
+│
+├── code.py
+├── Delivery_Logistics_Cleaned.csv
+├── Week_3_Logistics_EDA_Report_FINAL.docx
+│
+└── visualizations
+    ├── 01_...
+    ├── 02_...
+    ├── 03_...
+    ├── ...
+    └── 15_...
+3. README file banana
+
+week3 folder par right click:
+
+New File
+
+Naam:
+
+README.md
+
+Usme main tumhe proper GitHub README content dungi.
+
+4. .gitignore bhi bana do
+
+New File:
+
+.gitignore
+
+Isme:
+
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.vscode/
+Abhi bas itna karo.
+
+CSV + code.py + DOC + visualizations folder ye 4 cheezein ready kar lo.
+
+Phir screenshot bhejo, main check karke README.md ka exact content + Git commands dungi.
+
+achhhi file bnaaaa 
+
+Haan 😭 ab ek proper professional README.md bana diya hai — GitHub pe direct upload kar sakti ho.
+
+📄 Download README.md
+
+Isme:
+
+Project overview
+Dataset details
+25,000 records / 16 columns
+Actual EDA metrics
+EDA methodology
+15 visualizations
+Tools & technologies
+Project structure
+Operational insights
+Future improvements
+Report details
+
+Ab next: is README.md ko apne week3 folder mein rakh do. Phir hum GitHub pe push karenge. 
+
+README.md
+Document
+
+Library
+/
+README.md
+Logistics Performance — Exploratory Data Analysis
+📌 Project Overview
+
+This project presents an Exploratory Data Analysis (EDA) of logistics delivery performance data.
+
+The analysis focuses on understanding delivery time, delivery cost, distance, package weight, delivery ratings, delivery status, delays, and operational segments such as regions, delivery modes, delivery partners, and vehicle types.
+
+The objective is to convert raw logistics records into clear statistical insights that can support operational monitoring and further analysis.
+
+📊 Dataset
+Records: 25,000
+Columns: 16
+Missing values: 0
+Duplicate rows: 0
+Main Variables
+delivery_id
+delivery_partner
+package_type
+vehicle_type
+delivery_mode
+region
+weather_condition
+distance_km
+package_weight_kg
+delivery_time_hours
+expected_time_hours
+delayed
+delivery_status
+delivery_rating
+delivery_cost
+distance_category
+📈 Key Performance Metrics
+Metric	Result
+Average Delivery Time	6.25 hours
+Average Delivery Cost	864.94
+Average Delivery Rating	3.67
+Delivered	73.32%
+Delayed	21.36%
+Failed	5.31%
+🔎 EDA Performed
+1. Data Quality Analysis
+Dataset structure and dimensions
+Missing-value analysis
+Duplicate-row analysis
+Data-type and numerical-field checks
+2. Descriptive Statistics
+
+Calculated:
+
+Mean
+Median
+Standard deviation
+Minimum and maximum
+Quartiles
+Interquartile Range (IQR)
+3. Distribution Analysis
+
+Created distributions for:
+
+Delivery time
+Delivery cost
+Delivery distance
+4. Outlier Analysis
+
+Used the 1.5 × IQR rule to identify potential outliers in:
+
+Distance
+Package weight
+Delivery time
+Delivery cost
+
+Potential outliers were treated as observations requiring investigation rather than automatically being considered errors.
+
+5. Relationship Analysis
+
+Analyzed:
+
+Distance vs delivery time
+Distance vs delivery cost
+Actual vs expected delivery time
+Correlations among numerical logistics variables
+6. Operational Segmentation
+
+Compared:
+
+Average delivery time by region
+Average delivery cost by delivery mode
+Average delivery rating by delivery partner
+Delivery records by vehicle type
+Delay rate by region
+📊 Visualizations
+
+The project includes 15 visualizations covering:
+
+Delivery Time Distribution
+Delivery Cost Distribution
+Distance Distribution
+Delivery Time Box Plot
+Delivery Cost Box Plot
+Distance Box Plot
+Distance vs Delivery Time
+Distance vs Delivery Cost
+Actual vs Expected Delivery Time
+Average Delivery Time by Region
+Average Delivery Cost by Delivery Mode
+Average Delivery Rating by Delivery Partner
+Delivery Records by Vehicle Type
+Correlation Heatmap
+Delay Rate by Region
+🛠️ Tools & Technologies
+Python
+Pandas
+NumPy
+Matplotlib
+Seaborn
+VS Code
+Git & GitHub
+📂 Project Structure
+week3-logistics-eda/
+│
+├── code.py
+├── Delivery_Logistics_Cleaned.csv
+├── Week_3_Logistics_EDA_Report_FINAL.docx
+├── README.md
+│
+└── visualizations/
+    ├── 01_delivery_time_distribution.png
+    ├── 02_delivery_cost_distribution.png
+    ├── 03_distance_distribution.png
+    ├── 04_delivery_time_boxplot.png
+    ├── 05_delivery_cost_boxplot.png
+    ├── 06_distance_boxplot.png
+    ├── 07_distance_vs_delivery_time.png
+    ├── 08_distance_vs_delivery_cost.png
+    ├── 09_actual_vs_expected_time.png
+    ├── 10_avg_delivery_time_region.png
+    ├── 11_avg_cost_delivery_mode.png
+    ├── 12_avg_rating_partner.png
+    ├── 13_delay_vehicle_type.png
+    ├── 14_correlation_heatmap.png
+    └── 15_delay_rate_region.png
+💡 Operational Insights
+
+The EDA provides a baseline for monitoring logistics performance across time, cost, quality, and delays.
+
+The analysis can help logistics teams:
+
+Identify unusually long deliveries for further investigation.
+Monitor delivery cost patterns across operating modes.
+Compare regional delivery performance.
+Track service quality through delivery ratings.
+Monitor delay rates using normalized percentages.
+Identify relationships between distance and operational performance.
+Use outlier analysis to investigate exceptional deliveries.
+🚀 Possible Future Improvements
+
+Future analysis could include:
+
+Time-series analysis of delivery performance.
+Predictive modeling for late-delivery risk.
+Route-level performance analysis.
+Cost-per-kilometre analysis.
+Weather impact analysis.
+Delivery-partner benchmarking.
+Interactive Power BI dashboard integration.
+📄 Report
+
+A detailed DOC report containing the methodology, statistical analysis, visualizations, findings, and recommendations is included in the project.
+
+Project: Week 3 — Exploratory Data Analysis on Logistics Performance
